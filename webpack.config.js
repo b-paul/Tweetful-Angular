@@ -20,7 +20,9 @@ module.exports = {
         query: {
           presets: ['es2015'],
           cacheDirectory: ''
-        } }
+        } },
+      { test: /\.scss?$/,
+        loaders: ['style', 'css', 'sass'] }
     ]
   }
 };
